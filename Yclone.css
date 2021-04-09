@@ -1,0 +1,503 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    display: grid;
+    /* overflow-y: scroll; */
+    grid-template-columns:0.43fr 2.7fr ;
+    grid-template-rows:  0.16fr 0.17fr 2fr;
+    grid-template-areas: 
+    "aside nav"
+    "aside header"
+    "aside main";
+}
+
+.nav{
+    grid-area: nav;
+    background-color: white;
+    border-bottom: 0.5px solid rgba(190, 190, 190, 0.527);
+}
+
+.nav div{
+    margin-left: 178px;
+    margin-top: 0px;
+    width: 645px;
+    height: 32px;
+    /* border: 1px solid rgba(128, 128, 128, 0.418); */
+}
+
+.nav div .fa-search{
+    color:#888888 ;
+}
+
+.nav input{
+    width: 575px;
+    height: 32px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+}
+
+.nav input::placeholder{
+    color:#888888 ;
+    font-weight: 500;
+    padding-left: 13px;
+}
+
+.nav button{
+    height: 32px;
+    border: none;
+    background-color: rgba(247, 245, 245, 0.74);
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin: 0;
+    padding:0px 6px 0px 6px ;
+    width: 70px;
+}
+
+.nav span #microphone{
+    margin-left: 17px;
+    margin-bottom: 3px;
+    width: 20px
+}
+
+.nav span .navImg{
+    width: 19px;
+    margin-left: 28px;
+}
+
+.nav #nineSquare{
+    width: 17px;
+    margin-left: 28px; 
+}
+
+.nav #imgSpan{
+    margin-left: 185px;
+}
+
+.nav span .profile{
+    margin-left: 28px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.header{
+    grid-area: header;
+    background-color:white;
+}
+
+.header button{
+    /* border: none; */
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 35px;
+    border: 0.5px solid rgba(190, 190, 190, 0.527);
+    margin-left: 12px;
+    color: #494949;
+}
+
+.header button span{
+    margin: 6px 6px 6px 6px;
+}
+
+.header #firstBtn{
+    margin-left: 28px;
+    background-color: #5A5959;
+    color: white;
+    border: none;
+}
+
+.header #firstBtn span{
+    margin: 6px 10px 6px 10px;
+}
+
+.header .fa-angle-right{
+    color: #5A5959 ;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: white;
+    display: grid;
+    /* position: fixed; */
+    width: 240px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2.2fr 2.6fr 2.4fr ;
+    grid-template-areas: 
+    "logo"
+    "home"
+    "library"
+    "subscription";
+}
+
+.aside .logo{
+    grid-area: logo;
+    background-color: white;
+    font-weight: normal;
+    width: 240px;
+}
+
+.aside .logo .con{
+    font-size: 25px;
+    color: #5a595a;
+    margin: 0px 25px 0px 25px;
+    font-weight: 400;
+}
+
+.aside .logo img{
+    width: 110px;
+}
+
+.aside .home{
+    height: 100%;
+    grid-area: home;
+    background-color: white;
+    border-bottom: 0.5px solid rgba(190, 190, 190, 0.527);
+    width: 228px;
+}
+
+.aside .home .col-12{
+    width: 230px;
+    height: 40px;
+}
+
+.aside .home .col-12 span{
+    margin-left: 25px;
+}
+
+.aside .home .fa-youtube-play, .material-icons{
+    font-size: 22px;
+    margin-left: 25px;
+    color:#5A5959 ;
+}
+
+.aside .home #home{
+    margin-top: 12px;
+    color: black;
+    background-color:#d6d6d6c2 ;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.aside .home #text{
+    color:#494949;
+    font-size: 14px;
+}
+
+.aside .library{
+    grid-area: library;
+    background-color: white;
+    width: 222px;
+    border-bottom: 0.5px solid rgba(190, 190, 190, 0.527);
+    width: 222px;
+}
+
+.aside .library .col-12{
+    width: 235px;
+    height: 40px;
+}
+
+.aside .library .col-12 span{
+    margin-left: 25px;
+}
+
+.aside .library .fa-youtube-play, .material-icons{
+    font-size: 22px;
+    margin-left: 25px;
+    color:#5A5959 ;
+}
+
+.aside .library .first{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.aside .library #text{
+    color:#494949;
+    font-size: 14px;
+}
+
+.aside .library #home .material-icons{
+    color: red !important;
+    color:#5A5959 ;
+}
+
+.aside .subscription{
+    grid-area: subscription;
+    background-color: white;
+    width: 240px;
+}
+
+.aside .subscription h6{
+    width: 235px;
+    height: 36px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#5A5959;
+    margin-left: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.aside .subscription .col-12{
+    width: 220px;
+    margin-left: 25px;
+    height: 41px;
+}
+
+.aside .subscription .col-12 img{
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.aside .subscription .col-12 span{
+    font-size:14px;
+    color:#494949;
+}
+
+.aside .subscription .col-12 span img, #dot{
+     width: 16px !important;
+     margin-left: 60px;
+     margin-right: 0px;
+}
+
+.aside .subscription .col-12 span #dot{
+    width: 16px !important;
+    margin-left: 83px;
+    font-size: 6px;
+    color: blue;
+    margin-right: 0px;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(57, 189, 189);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.4fr;
+    grid-template-areas:
+    "div1 div2 div3 div4"
+    "div5 div6 div7 div8"
+    "div9 div10 div11 div12";
+}
+
+
+
+.main .div1{
+    grid-area: div1;
+    background-color: white;
+}
+
+.main #firstImg #mainImg{
+    text-align: center;
+    margin-top: 17px;
+    margin-left: 25px;
+    width: 295px;
+}
+
+.main #firstImg #heading img{
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.main #firstImg #heading h6{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #313131;
+    margin-left: 15px;
+    margin-right:10px ;
+}
+
+.main #firstImg p{
+    margin-bottom: 0px;
+    margin-left: 78px;
+    font-size: 13px;
+    color: #5A5959;
+}
+
+.main .div2{
+    grid-area: div2;
+    background-color: white;
+}
+
+.main #secondImg #middle {
+    width: 295px;
+    margin-top: 17px;
+    margin-left: 14px;
+}
+
+.main #secondImg p{
+    margin-bottom: 8.5px;
+    margin-left: 68px;
+    font-size: 13px;
+    color: #5A5959;
+}
+
+.main #secondImg #heading h6{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #313131;
+    margin-left: 15px;
+    margin-right:10px ;
+}
+
+.main #secondImg #heading img{
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.main #thirdImg #third{
+    width: 295px;
+    margin-top: 17px;
+    margin-left: 6px;
+}
+
+.main #thirdImg p{
+    margin-bottom: 8.5px;
+    margin-left: 60px;
+    font-size: 13px;
+    color: #5A5959;
+}
+
+.main #thirdImg #heading h6{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #313131;
+    margin-left: 15px;
+    margin-right:10px ;
+}
+
+.main #thirdImg #heading img{
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.main .div4{
+    grid-area: div4;
+    background-color: white;
+}
+
+
+.main #forthImg #forth {
+    width: 295px;
+    margin-top: 17px;
+    margin-left: 0px;
+}
+
+.main #forthImg p{
+    margin-bottom: 8.5px;
+    margin-left: 54px;
+    font-size: 13px;
+    color: #5A5959;
+}
+
+.main #forthImg #heading h6{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #313131;
+    margin-left: 15px;
+    margin-right:10px ;
+}
+
+.main #forthImg #heading img{
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.main .div3{
+    grid-area: div3;
+    background-color: white;
+}
+
+
+.main .div5{
+    grid-area: div5;
+    background-color: white;
+}
+
+.main .div6{
+    grid-area: div6;
+    background-color: white;
+}
+
+.main .div7{
+    grid-area: div7;
+    background-color: white;
+}
+
+.main .div8{
+    grid-area: div8;
+    background-color: white;
+}
+
+.main .div9{
+    grid-area: div9;
+    background-color: white;
+}
+
+.main .div9 img{
+    width: 295px;
+    height: 100px;
+    margin-top: 17px;
+    margin-left: 25px;
+}
+
+.main .div10{
+    grid-area: div10;
+    background-color: white;
+}
+
+.main .div10 img{
+    width: 295px;
+    height:100px;
+    margin-top: 17px;
+    margin-left: 14px;
+}
+
+.main .div11{
+    grid-area: div11;
+    background-color: white;
+}
+
+.main .div11 img{
+    width: 295px;
+    height: 100px;
+    margin-top: 17px;
+    margin-left: 6px;
+}
+
+
+.main .div12{
+    grid-area: div12;
+    background-color: white;
+}
+
+.dot p #fa-circle{
+    font-size: 5px;
+    margin-bottom: 5px;
+}
+.main .div12 img{
+    width: 295px;
+    height: 100px;
+    margin-top: 17px;
+    margin-left: 0px;
+}
+
+
+
